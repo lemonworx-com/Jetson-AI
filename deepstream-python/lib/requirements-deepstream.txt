@@ -1,0 +1,4 @@
+cffi==1.17.1
+cuda-python==12.9.0
+pyzmq==23.2.0
+/app/lib/pyds/pyds-1.2.0-cp310-cp310-linux_aarch64.whl

@@ -1,0 +1,5 @@
+lap>=0.5.12 
+onnxslim==0.1.50 
+ultralytics==8.3.121 
+ultralytics-thop==2.0.8 
+shapely==2.0.7

@@ -57,3 +57,10 @@ COPY --from=ryagi17/opencv-l4t:l4t36.4.3-CV4.10.0  /opencv-install/ /usr/local/
 # Copy cv2 binding from builder
 COPY --from=ryagi17/opencv-l4t:l4t36.4.3-CV4.10.0  /opencv-install/lib/python3.10/dist-packages/cv2/python-3.10/cv2.cpython-310-aarch64-linux-gnu.so /usr/local/lib/python3.10/dist-packages/
 RUN ldconfig
+
+COPY models ${wdir}/models
+COPY streams ${wdir}/streams
+COPY configs ${wdir}/configs
+COPY src ${wdir}/src
+
+WORKDIR ${wdir}/src
