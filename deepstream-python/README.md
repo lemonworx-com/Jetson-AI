@@ -27,5 +27,5 @@ docker run -it --rm --network=host --runtime nvidia -e DISPLAY=$DISPLAY -v /tmp/
 ### Deestream Test 1
 
 ```sh
-python3 dstest_1.py /app/streams/sample_qHD.h264
+python3 dstest_1_simplified.py /app/streams/sample_qHD.h264
 ```
